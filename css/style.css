@@ -21,6 +21,7 @@
 
     --clr-light:#fff;
     --clr-dark:#303030;
+    /* --clr-accent: #eee11e; */
     --clr-accent: #16e0bd;
 
     --fs-h1: 3rem;
@@ -107,6 +108,7 @@ h3{   font-size: var(--fs-h3)}
 
 .section__title {
     margin-bottom: .25em;
+    color: var(--clr-accent);
 }
 
 .section__title--intro {
@@ -142,7 +144,22 @@ h3{   font-size: var(--fs-h3)}
 
 /* header */
 
-nav{display: none ;}
+.header{
+    display:flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.logo{
+    max-width: 100px;
+}
+
+.nav{
+    position: fixed;
+    /* position: relative; */
+    background: var(--clr-dark);
+    color: var(--clr-light);
+}
 
 
 .intro{
