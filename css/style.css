@@ -178,20 +178,6 @@ header {
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
 
-.nav {
-    position: fixed;
-    background: var(--clr-dark);
-    color: var(--clr-light);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    
-    transform: translateX(100%);
-    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
-}
-
 .nav__list {
     list-style: none;
     display: flex;
@@ -320,8 +306,9 @@ header {
         grid-row: 2;
         text-align: right;
         position: relative;
-        left: -1.5em;
-        width: calc(100% + 1.5em);
+        left: -4em;
+        width: calc(100% + 4em);
+        margin-left:  3em;
     }
 }
 
