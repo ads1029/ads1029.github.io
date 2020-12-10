@@ -471,7 +471,7 @@ header {
     /* border-width: 10; */
     
     overflow:hidden;
-    margin: 1rem;
+    margin: 0.5rem;
 }
 
 .portfolio__img{
