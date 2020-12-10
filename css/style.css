@@ -48,7 +48,7 @@
 /* General styles */
 
 
-/* ? Safari not supporting this behavior lul */
+/* ? Safari not supporting this behavior LUL */
 html{
     scroll-behavior: smooth;
 }
@@ -72,8 +72,17 @@ section {
 
 
 img {
+    /* show the whole img */
     display: block;
     max-width: 100%;
+
+    /* place it center */
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+
+    /* TODO fulfill the container */
+    object-fit: cover;
 }
 
 
@@ -173,9 +182,18 @@ header {
     left: 0;
     right: 0;
     z-index: 100;
+
+    /* messing around */
+    /* height: 5%;
+    width: 50%; */
+    
     
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+
+    /* messing around */
+    /* transform: translateX(200%); */
+
 }
 
 .nav__list {
@@ -187,6 +205,11 @@ header {
     align-items: center;
     margin: 0;
     padding: 0;
+
+
+    /* messing around */
+    /* height: 10%; */
+
 }
 
 .nav__link {
@@ -221,6 +244,9 @@ header {
     position: fixed;
 }
 
+
+/*!!! HAMBURGER MAGIC!!! */
+
 .nav-open .hamburger{
     transform: rotate(.625turn);
 }
@@ -231,16 +257,9 @@ header {
     transform: rotate(90deg) translateX(-6px);
 }
 
-
-
-
-
 .nav-open .hamburger::after{
     opacity: 0;
 }
-
-
-/*!!! HAMBURGER!!! */
 
 .hamburger {
     display: block;
@@ -425,27 +444,45 @@ header {
 
 }
 
+.section__title-work::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--clr-light);
+    opacity: 0.25;
+}
+
+
 .portfolio{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-
+    /* width: 60%;
+    align-self:center;
+    justify-content: center; */
+    
 }
 
 
 .portfolio__item{
     background:var(--clr-accent);
+    /* border: var(--clr-accent); */
+    /* border-width: 10; */
+    
     overflow:hidden;
-
+    margin: 1rem;
 }
 
 .portfolio__img{
-    transition: transform 750ms 
-    cubic-bezier(1, 0, 0, 1)
-    /* cubic-bezier(.5,0,.5,.1) */
-    ,
+    transition: transform 750ms cubic-bezier(1, 0, 0, 1),
+    /* transition: transform 750ms cubic-bezier(.5,0,.5,.1), */
+    
     opacity 250ms linear;
     height: 400px;
     width: auto;
+
+    /* object-fit: cover; */
 }
 
 .portfolio__img:hover{
@@ -494,5 +531,5 @@ header {
 
 .social-list__item {
     margin: 0 1em;
-    font-size: var(--fs-h2);
+    font-size: var(--fs-h3);
 }
