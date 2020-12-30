@@ -400,6 +400,9 @@ header {
 
 .about-me__img {
     box-shadow: var(--bs);
+    object-fit: cover;
+
+    /* height: 100%; */
 }
 
 @media (min-width: 600px) {
@@ -436,6 +439,7 @@ header {
         grid-area: img;
         position: relative;
         z-index: 2;
+        height: 100%;
     }
 }
 
