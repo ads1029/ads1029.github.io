@@ -17,6 +17,7 @@
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
 
+        
 
     </head>
     <body>
@@ -43,7 +44,7 @@
             <h1 class="section__title section__title--intro" text-align="right">
                 Hi, I'm <strong>Minjie Huang</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">A front-end dev</p>
+            <p class="section__subtitle section__subtitle--intro">A (front-end) dev</p>
             <img src="img/dev-01.png" alt="a picture of Sakamoto" height=240  class="intro__img" />
         </section>
         
@@ -51,20 +52,22 @@
         <!-- My services -->
         <section class="my-services" id="services">
             <h2 class="section__title section__title--services">What I do</h2>
-            <div class="services">
+            <div class="services container">
                 <div class="service">
                     <h3>Design + Development</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>As spent the last couple of years studying architecture and information technology, I have solid confidence in developing while providing a decent-looking design into products. I understand it is not a "must-have" skill pack for a developer. However, it can definitely increase efficiency while communicating with the design team.</p>
                 </div> <!-- / service -->
                 
                 <div class="service">
-                    <h3>React/ React Native</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <h3>React + React Native</h3>
+                    <p>I have several projects experience with React and React Native as I was required to get used of them when I got the first job. In my opinion, these frameworks might save you a bunch of time if you know when to use them, moreover, when not to use them.</p>
                 </div> <!-- / service -->
                 
                 <div class="service">
-                    <h3>Python</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <h3>Python + Backend</h3>
+                    
+                    <p>I start coding with python. No doubt it is a wonderful language and I learn tons of coding principles with it. Although I use python less at this moment as a frontend developer, my experiences of using it would still help me achieve a fully-reusable web application if needed. </p>
+
                 </div> <!-- / service -->
             </div> <!-- / services -->
             
@@ -88,7 +91,8 @@
                 <p>In the last year, I devoted myself to this industry with enthusiasm. Given the experience in variety aspects, I am now able to effectively communicate with everyone to achieve the goal.</p>
            </div>
            
-           <img src="img/dev-02.png" alt="Jane leaning against a bus" height='400' width='200' class="about-me__img">
+           <img src="https://via.placeholder.com/400"  class="about-me__img"
+                alt="Mil Arch Work" height='400' width='200'>
         </section>
         
         <!-- My Work -->
@@ -98,24 +102,28 @@
             
             <div class="portfolio">
                 <!-- Portfolio item 01 -->
-                <a href="portfolio-UTMS.html" class="portfolio__item">
+                <!-- <a href="portfolio-UTMS.html" class="portfolio__item"> -->
+                <a href="#work" class="portfolio__item">
                     <img src="img/portfolio-UTMS.png" alt="" class="portfolio__img">
+                    <p class="details" id="detail">Show detail</p>
                 </a>
                 
                 <!-- Portfolio item 02 -->
-                <a href="portfolio-Uphoto.html" class="portfolio__item">
+                <!-- <a href="portfolio-Uphoto.html" class="portfolio__item"> -->
+                <a href="#work" class="portfolio__item">
                     <img src="img/portfolio-Uphoto.png" alt="" class="portfolio__img">
                 </a>
                 
                 <!-- Portfolio item 03 -->
-                <a href="portfolio-Utracer.html" class="portfolio__item">
+                <!-- <a href="portfolio-Utracer.html" class="portfolio__item"> -->
+                <a href="#work" class="portfolio__item">
                     <img src="img/portfolio-Utracer.png" alt="" class="portfolio__img">
                 </a>
                 
                 <!-- Portfolio item 04 -->
-                <a href="portfolio-item.html" class="portfolio__item">
+                <!-- <a href="portfolio-item.html" class="portfolio__item">
                     <img src="img/portfolio-04.jpg" alt="" class="portfolio__img">
-                </a>
+                </a> -->
                 
                 <!-- Portfolio item 05 -->
                 <!-- <a href="https://www.youtube.com/watch?v=EvE5cYNXufY" class="portfolio__item" >
@@ -136,6 +144,8 @@
         <footer class="footer">
             <!-- replace with your own email address -->
             <a href="mailto:millerk1029@gmail.com" class="footer__link">Contact me</a>
+            <br>
+            
             <ul class="social-list">
                 <!-- <li class="social-list__item"><a class="social-list__link" href="https://codepen.io">
                     
@@ -146,18 +156,26 @@
                 </a></li> -->
 
                 <!-- <li class="social-list__item"><a class="social-list__link" href="https://alipay.com"> -->
-                <li class="social-list__item"><a class="social-list__link" onclick="alert(`谢谢打钱！`)">
+                <!-- <li class="social-list__item"><a class="social-list__link" onclick="alert(`谢谢打钱！`)">
                     <i class="fab fa-alipay"></i>
-                </a></li>
+                </a></li> -->
 
-                <li class="social-list__item"><a class="social-list__link" href="https://github.com/ads1029"d>
+                <li class="social-list__item"><a class="social-list__link" href="https://github.com/ads1029">
                 <i class="fab fa-github-alt"></i>
                 </a></li>
 
-                <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/minjie-huang-36bb75192/"d>
+                <li class="social-list__item"><a class="social-list__link" href="mailto:millerk1029@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a></li>
+
+
+                <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/minjie-huang-36bb75192/">
                     <i class="fab fa-linkedin"></i>
                 </a></li>
             </ul>
+
+
+
         </footer>
         
 
